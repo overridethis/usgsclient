@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
+    <PackageId>UsgsClient</PackageId>
+    <Authors>Roberto hernandez</Authors>
+    <PackageIconUrl>https://raw.githubusercontent.com/overridethis/usgsclient/master/project-icon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/overridethis/usgsclient/master/LICENSE</PackageLicenseUrl>
+    <Owners>Roberto Hernandez</Owners>
+    <PackageProjectUrl>https://github.com/overridethis/usgsclient</PackageProjectUrl>
+    <Summary>UsgsClient is a .NET Standard 1.1 library for querying the USGS Earthquake APIs.</Summary>
+    <PackageTags>USGS Earthquakes </PackageTags>
+    <Title>UsgsClient</Title>
+    <Description>UsgsClient is a .NET Standard 1.1 library for querying the USGS Earthquake APIs.</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,5 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="GeoJSON.Net" Version="1.0.60-alpha" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.1.248" />
   </ItemGroup>
 </Project>
