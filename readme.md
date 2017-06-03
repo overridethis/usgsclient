@@ -28,7 +28,9 @@ var svc = Usgs
     .Quakes
     .Feed();
 
-var quake = await svc.Detail(quakes.First().Id);
+var quakeId = "us20009jd6";
+
+var quake = await svc.Detail(quakeId);
 ```
 > For documentation on the USGS Earthquake GeoJSON Detail Feed read the associated documentation at [https://earthquake.usgs.gov](
 https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson_detail.php)
