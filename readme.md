@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/ael1mr6xk4yw97uf?svg=true)](https://ci.appveyor.com/project/rjhernandez/usgsclient-dt44t)
+
+
 # USGS Client
 ## Description
 UsgsClient is a `.NET Standard 1.1` library for querying the USGS Earthquake APIs.
