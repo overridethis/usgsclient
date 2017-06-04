@@ -1,5 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/ael1mr6xk4yw97uf?svg=true)](https://ci.appveyor.com/project/rjhernandez/usgsclient-dt44t)
 
+[![NuGet Version](http://img.shields.io/nuget/v/UsgsClient.svg?style=flat)](https://www.nuget.org/packages/UsgsClient/)
 
 # USGS Client
 ## Description
