@@ -6,6 +6,14 @@
 ## Description
 UsgsClient is a `.NET Standard 1.1` library for querying the USGS Earthquake APIs.
 
+## Installation
+Install the UsgsClient from Nuget by executing the following command.
+```
+Install-Package GeoJSON.NET -Version 1.0.60-alpha
+Install-Package UsgsClient
+```
+> Current version of UsgsClient depends on an alpha release version of GeoJSON.NET that needs to be installed before the UsgsClient.
+
 ## USGS Earthquake API
 ### GeoJSON Summary Feed
 Retrieving all significant earthquakes for the past week.
