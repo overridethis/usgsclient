@@ -19,7 +19,7 @@
     <Folder Include="Quakes\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="GeoJSON.Net" Version="1.0.60-alpha" />
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.1.248" />
+    <PackageReference Include="GeoJSON.Net" Version="1.0.62" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.1.324" />
   </ItemGroup>
 </Project>
