@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFrameworks>netstandard1.1;net46;</TargetFrameworks>
     <PackageId>UsgsClient</PackageId>
     <Authors>Roberto hernandez</Authors>
     <PackageIconUrl>https://raw.githubusercontent.com/overridethis/usgsclient/master/project-icon.png</PackageIconUrl>
@@ -17,6 +17,12 @@
   <ItemGroup>
     <PackageReference Include="GeoJSON.Net" Version="1.0.62" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'net46'">
+    <PackageReference Include="RestSharp">
+      <Version>105.2.3</Version>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
