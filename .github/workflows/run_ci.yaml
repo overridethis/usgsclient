@@ -18,7 +18,7 @@ jobs:
 
       # Restore all dependencies
       - name: Restore dependencies
-        run: msbuild ./UsgsClient.sln /t:Restore /p:Configuration=Release
+        run: msbuild UsgsClient.sln /t:Restore /p:Configuration=Release
 
       # Execute all unit tests in the solution
       - name: Execute unit tests
