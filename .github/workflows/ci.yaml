@@ -1,0 +1,29 @@
+name: Run CI
+
+on: 
+  push: 
+    branches: [ $default-branch ]
+  pull_request: 
+    branches: [ $default-branch ]
+
+jobs:
+  build: 
+    runs-on: windows-latest
+    steps:
+      # Install the .NET Core workload
+      - name: Install .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+
+      # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      # Restore all dependencies
+      - name: Restore dependencies
+        run: msbuild ./UsgsClient.sln /t:Restore /p:Configuration=Release
+
+      # Execute all unit tests in the solution
+      - name: Execute unit tests
+        run: dotnet test
