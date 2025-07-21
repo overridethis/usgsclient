@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
+using System.Text.Json;
 using System.Net.Http;
 
 namespace UsgsClient.Common
@@ -31,7 +31,7 @@ namespace UsgsClient.Common
                 // TODO: Error Handling.
                 content = await rsp.Content.ReadAsStringAsync();
             }   
-            return JsonConvert.DeserializeObject<TResponseType>(content);
+            return JsonSerializer.Deserialize<TResponseType>(content);
         }
     }
 
