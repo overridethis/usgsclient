@@ -1,23 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.1;net46;</TargetFrameworks>
+    <TargetFrameworks>net8.0;netstandard2.0</TargetFrameworks>
     <PackageId>UsgsClient</PackageId>
     <Authors>Roberto hernandez</Authors>
     <PackageIconUrl>https://raw.githubusercontent.com/overridethis/usgsclient/master/project-icon.png</PackageIconUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/overridethis/usgsclient/master/LICENSE</PackageLicenseUrl>
     <Owners>Roberto Hernandez</Owners>
     <PackageProjectUrl>https://github.com/overridethis/usgsclient</PackageProjectUrl>
-    <Summary>UsgsClient is a .NET Standard 1.1 library for querying the USGS Earthquake APIs.</Summary>
+    <Summary>UsgsClient is a .NET library for querying the USGS Earthquake APIs.</Summary>
     <PackageTags>USGS Earthquakes </PackageTags>
     <Title>UsgsClient</Title>
-    <Description>UsgsClient is a .NET Standard 1.1 library for querying the USGS Earthquake APIs.</Description>
+    <Description>UsgsClient is a .NET library for querying the USGS Earthquake APIs.</Description>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="GeoJSON.Net" Version="1.2.19" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
   </ItemGroup>
   
 
